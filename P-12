@@ -1,0 +1,943 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+
+	string nic;
+	int menu;
+	int setting;
+	int quesion = 8;
+	char rule;
+	int hp;
+	int point;
+	string colorRun;
+	string colorReset = "\x1b[0m";
+	int color;
+	string otvet;
+	char end;
+
+	cout << "Приветствую вас на игре <ВИКТОРИНА>.\n";
+	cout << "Введите свое имя: ";
+	cin >> nic;
+
+	while (true) {
+		system("cls");
+		cout << "-" << colorRun << "МЕНЮ" << colorReset << "-\n";
+		cout << "Игрок: " << nic << endl;
+		cout << "[1] Начать игру\n";
+		cout << "[2] Настройки\n";
+		cout << "[3] Правила\n";
+		cout << "[4] Выход\n";
+		cout << "Выберите пункт: ";
+		cin >> menu;
+
+		if (menu == 1) {
+			if (quesion == 8) {
+				hp = 3;
+				point = 0;
+
+				//1
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 1. Что такое переменная в программировании ?\n";
+				cout << "A) Устройство ввода\n";
+				cout << "B) Контейнер для хранения данных\n";
+				cout << "C) Тип цикла\n";
+				cout << "D) Язык программирования\n";
+				cin >> otvet;
+
+				if (otvet == "B") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//2
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 2. Какой оператор используется для проверки условия 'если' ?\n";
+				cout << "A) for\n";
+				cout << "B) if\n";
+				cout << "C) while\n";
+				cout << "D) print\n";
+				cin >> otvet;
+
+				if (otvet == "B") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//3
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 3. Как называется ошибка в программе ?\n";
+				cout << "A) Синтаксис\n";
+				cout << "B) Баг(Bug)\n";
+				cout << "C) Компиляция\n";
+				cout << "D) Скрипт\n";
+				cin >> otvet;
+
+				if (otvet == "B") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//4
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 4. Что делает цикл ?\n";
+				cout << "A) Хранит данные\n";
+				cout << "B) Проверяет условие\n";
+				cout << "C) Повторяет действия несколько раз\n";
+				cout << "D) Выводит текст на экран\n";
+				cin >> otvet;
+
+				if (otvet == "C") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//5
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 5. Какая структура данных работает по принципу 'первым пришел, первым ушел' (FIFO) ?\n";
+				cout << "A) Стек(Stack)\n";
+				cout << "B) Массив(Array)\n";
+				cout << "C) Очередь(Queue)\n";
+				cout << "D) Список(List)\n";
+				cin >> otvet;
+
+				if (otvet == "C") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//6
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 6. Как называется набор инструкций для решения задачи ?\n";
+				cout << "A) Алгоритм\n";
+				cout << "B) Переменная\n";
+				cout << "C) Интерфейс\n";
+				cout << "D) База данных\n";
+				cin >> otvet;
+
+				if (otvet == "A") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//7
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 7. Какой язык программирования часто используется для веб - разработки и добавления интерактивности на сайты ?\n";
+				cout << "A) Python\n";
+				cout << "B) Java\n";
+				cout << "C) C++\n";
+				cout << "D) JavaScript\n";
+				cin >> otvet;
+
+				if (otvet == "D") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//8
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 8. Что означает 'ООП' ? \n";
+				cout << "A) Объектно - Ориентированное Программирование\n";
+				cout << "B) Основной Отладочный Процесс\n";
+				cout << "C) Организация Операционных Памятей\n";
+				cout << "D) Общая Операционная Программа\n";
+				cin >> otvet;
+
+				if (otvet == "A") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				system("cls");
+				cout << "Вы ответили на все вопросы!\n";
+				cout << "Правельных ответов: " << point << endl;
+
+				system("pause");
+			}
+			else if (quesion == 10) {
+				hp = 3;
+				point = 0;
+
+				//1
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 1. Что такое переменная в программировании ?\n";
+				cout << "A) Устройство ввода\n";
+				cout << "B) Контейнер для хранения данных\n";
+				cout << "C) Тип цикла\n";
+				cout << "D) Язык программирования\n";
+				cin >> otvet;
+
+				if (otvet == "B") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//2
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 2. Какой оператор используется для проверки условия 'если' ?\n";
+				cout << "A) for\n";
+				cout << "B) if\n";
+				cout << "C) while\n";
+				cout << "D) print\n";
+				cin >> otvet;
+
+				if (otvet == "B") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//3
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 3. Как называется ошибка в программе ?\n";
+				cout << "A) Синтаксис\n";
+				cout << "B) Баг(Bug)\n";
+				cout << "C) Компиляция\n";
+				cout << "D) Скрипт\n";
+				cin >> otvet;
+
+				if (otvet == "B") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//4
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 4. Что делает цикл ?\n";
+				cout << "A) Хранит данные\n";
+				cout << "B) Проверяет условие\n";
+				cout << "C) Повторяет действия несколько раз\n";
+				cout << "D) Выводит текст на экран\n";
+				cin >> otvet;
+
+				if (otvet == "C") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//5
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 5. Какая структура данных работает по принципу 'первым пришел, первым ушел' (FIFO) ?\n";
+				cout << "A) Стек(Stack)\n";
+				cout << "B) Массив(Array)\n";
+				cout << "C) Очередь(Queue)\n";
+				cout << "D) Список(List)\n";
+				cin >> otvet;
+
+				if (otvet == "C") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//6
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 6. Как называется набор инструкций для решения задачи ?\n";
+				cout << "A) Алгоритм\n";
+				cout << "B) Переменная\n";
+				cout << "C) Интерфейс\n";
+				cout << "D) База данных\n";
+				cin >> otvet;
+
+				if (otvet == "A") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//7
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 7. Какой язык программирования часто используется для веб - разработки и добавления интерактивности на сайты ?\n";
+				cout << "A) Python\n";
+				cout << "B) Java\n";
+				cout << "C) C++\n";
+				cout << "D) JavaScript\n";
+				cin >> otvet;
+
+				if (otvet == "D") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//8
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 8. Что означает 'ООП' ? \n";
+				cout << "A) Объектно - Ориентированное Программирование\n";
+				cout << "B) Основной Отладочный Процесс\n";
+				cout << "C) Организация Операционных Памятей\n";
+				cout << "D) Общая Операционная Программа\n";
+				cin >> otvet;
+
+				if (otvet == "A") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//9
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 9. Какое ключевое слово используется для создания постоянного значения, которое нельзя изменить ?\n";
+				cout << "A) let\n";
+				cout << "B) var\n";
+				cout << "C) const\n";
+				cout << "D) def\n";
+				cin >> otvet;
+
+				if (otvet == "C") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//10
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 10. Что выведет этот код : print(2 + 2 * 2) ?\n";
+				cout << "A) 6\n";
+				cout << "B) 8\n";
+				cout << "C) 2\n";
+				cout << "D) 4\n";
+				cin >> otvet;
+
+				if (otvet == "A") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				system("cls");
+				cout << "Вы ответили на все вопросы!\n";
+				cout << "Правельных ответов: " << point << endl;
+
+				system("pause");
+			}
+			else if (quesion == 12) {
+				hp = 3;
+				point = 0;
+
+				//1
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 1. Что такое переменная в программировании ?\n";
+				cout << "A) Устройство ввода\n";
+				cout << "B) Контейнер для хранения данных\n";
+				cout << "C) Тип цикла\n";
+				cout << "D) Язык программирования\n";
+				cin >> otvet;
+
+				if (otvet == "B") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//2
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 2. Какой оператор используется для проверки условия 'если' ?\n";
+				cout << "A) for\n";
+				cout << "B) if\n";
+				cout << "C) while\n";
+				cout << "D) print\n";
+				cin >> otvet;
+
+				if (otvet == "B") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//3
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 3. Как называется ошибка в программе ?\n";
+				cout << "A) Синтаксис\n";
+				cout << "B) Баг(Bug)\n";
+				cout << "C) Компиляция\n";
+				cout << "D) Скрипт\n";
+				cin >> otvet;
+
+				if (otvet == "B") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//4
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 4. Что делает цикл ?\n";
+				cout << "A) Хранит данные\n";
+				cout << "B) Проверяет условие\n";
+				cout << "C) Повторяет действия несколько раз\n";
+				cout << "D) Выводит текст на экран\n";
+				cin >> otvet;
+
+				if (otvet == "C") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//5
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 5. Какая структура данных работает по принципу 'первым пришел, первым ушел' (FIFO) ?\n";
+				cout << "A) Стек(Stack)\n";
+				cout << "B) Массив(Array)\n";
+				cout << "C) Очередь(Queue)\n";
+				cout << "D) Список(List)\n";
+				cin >> otvet;
+
+				if (otvet == "C") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//6
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 6. Как называется набор инструкций для решения задачи ?\n";
+				cout << "A) Алгоритм\n";
+				cout << "B) Переменная\n";
+				cout << "C) Интерфейс\n";
+				cout << "D) База данных\n";
+				cin >> otvet;
+
+				if (otvet == "A") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//7
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 7. Какой язык программирования часто используется для веб - разработки и добавления интерактивности на сайты ?\n";
+				cout << "A) Python\n";
+				cout << "B) Java\n";
+				cout << "C) C++\n";
+				cout << "D) JavaScript\n";
+				cin >> otvet;
+
+				if (otvet == "D") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//8
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 8. Что означает 'ООП' ? \n";
+				cout << "A) Объектно - Ориентированное Программирование\n";
+				cout << "B) Основной Отладочный Процесс\n";
+				cout << "C) Организация Операционных Памятей\n";
+				cout << "D) Общая Операционная Программа\n";
+				cin >> otvet;
+
+				if (otvet == "A") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//9
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 9. Какое ключевое слово используется для создания постоянного значения, которое нельзя изменить ?\n";
+				cout << "A) let\n";
+				cout << "B) var\n";
+				cout << "C) const\n";
+				cout << "D) def\n";
+				cin >> otvet;
+
+				if (otvet == "C") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//10
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 10. Что выведет этот код : print(2 + 2 * 2) ?\n";
+				cout << "A) 6\n";
+				cout << "B) 8\n";
+				cout << "C) 2\n";
+				cout << "D) 4\n";
+				cin >> otvet;
+
+				if (otvet == "A") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//11
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 11. Какая функция используется для вывода текста на экран во многих языках ?\n";
+				cout << "A) input()\n";
+				cout << "B) calculate()\n";
+				cout << "C) print()\n";
+				cout << "D) run()\n";
+				cin >> otvet;
+
+				if (otvet == "C") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				//12
+				system("cls");
+				cout << "Игрок:" << nic << " | жизни:" << hp << "| очки:" << point << endl;
+				cout << "Вопрос 12. Как называется целый числа тип данных ?\n";
+				cout << "A) String\n";
+				cout << "B) Float\n";
+				cout << "C) Boolean\n";
+				cout << "D) Integer\n";
+				cin >> otvet;
+
+				if (otvet == "D") {
+					cout << "Правильно!";
+					point++;
+				}
+				else {
+					cout << "Неправельно!";
+					hp--;
+				}
+
+				if (hp < 1) {
+					system("cls");
+					cout << "Игра окончена! У вас закончились жизни!\n";
+					cout << "Ваш результат: " << point << " очков\n";
+					system("pause");
+					continue;
+				}
+
+				system("cls");
+				cout << "Вы ответили на все вопросы!\n";
+				cout << "Правельных ответов: " << point << endl;
+
+				system("pause");
+			}
+
+		}
+		else if (menu == 2) {
+			system("cls");
+			cout << "-" << colorRun << "НАСТРОЙКИ" << colorReset << "-\n";
+			cout << "[1] Редактировать имя игрока\n";
+			cout << "[2] Редактировать вопросы в игре\n";
+			cout << "[3] Редактировать цвет интерфейса\n";
+			cout << "Выберите пункт: ";
+			cin >> setting;
+			switch (setting) {
+			case 1:
+				system("cls");
+				cout << "Новое имя: ";
+				cin >> nic;
+				break;
+			case 2:
+				while (true) {
+					system("cls");
+					cout << "Выберите количество вопросов 8 - 10 - 12: ";
+					cin >> quesion;
+					if (quesion == 8 or quesion == 10 or quesion == 12) {
+						break;
+					}
+					system("pause");
+				}
+				break;
+			case 3:
+				system("cls");
+				cout << "Выберите цвет:\n";
+				cout << "[1] Красный\n";
+				cout << "[2] Зеленый\n";
+				cout << "[3] Стандартный\n";
+				cout << "[4] Выход\n";
+				cin >> color;
+
+				if (color == 1) {
+					colorRun = "\x1b[91m";
+				}
+				else if (color == 2) {
+					colorRun = "\x1b[92m";
+				}
+				else if (color == 3) {
+					colorRun = "\x1b[0m";
+				}
+				else {
+					cout << "Такого цвета нет";
+				}
+				system("pause");
+				break;
+			}
+		}
+		else if (menu == 3) {
+			system("cls");
+			cout << "-" << colorRun << "ПРАВИЛА" << colorReset << "-\n";
+			cout << "* Игрок получает очки за правильный ответ на вопрос\n";
+			cout << "* Игрок проходит дальше за правильный ответ\n";
+			cout << "* Игрок теряет жизнь при неправильном ответе\n";
+			cout << "Выход: ";
+			cin >> rule;
+		}
+		else if (menu == 4) {
+			cout << "Игра завершена.";
+			return 0;
+		}
+	}
+	return 0;
+}
