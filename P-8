@@ -1,0 +1,157 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+
+	int a;
+	int b;
+	int x;
+	string c;
+
+	cout << "Переводчик\n";
+	cout << "[1] Русские слова\n";
+	cout << "[2] Английские слова\n";
+	cout << "[3] Выйти\n";
+	cin >> a;
+
+     switch (a) {
+	
+	 case 1:
+		cout << "1. Россия\n";
+		cout << "2. Рыба\n";
+		cout << "3. Да\n";
+		cout << "4. Нет\n";
+		cout << "5. Молоко\n";
+		cout << "6. Собака\n";
+		cout << "7. Уметь\n";
+		cout << "8. Аэропорт\n";
+		cout << "9. Виза\n";
+		cout << "10. Книга\n";
+		cout << "11. Формула\n";
+		cout << "12. Машина\n";
+		cout << "13. Красный\n";
+		cout << "14. Бык\n";
+		cout << "15. Отлично\n";
+		cin >> b;
+		switch (b) {
+		case 1: 
+			cout << "Перевод слова: Russia";
+			break;
+		case 2:
+			cout << "Перевод слова: Fish";
+			break;
+		case 3:
+			cout << "Перевод слова: Yes";
+			break;
+		case 4:
+			cout << "Перевод слова: No";
+			break;
+		case 5:
+			cout << "Перевод слова: Milk";
+			break;
+		case 6:
+			cout << "Перевод слова: Dog";
+			break;
+		case 7:
+			cout << "Перевод слова: Can";
+			break;
+		case 8:
+			cout << "Перевод слова: Airport";
+			break;
+		case 9:
+			cout << "Перевод слова: Visa";
+			break;
+		case 10:
+			cout << "Перевод слова: Book";
+			break;
+		case 11:
+			cout << "Перевод слова: formula";
+			break;
+		case 12:
+			cout << "Перевод слова: Car";
+			break;
+		case 13:
+			cout << "Перевод слова: Red";
+			break;
+		case 14:
+			cout << "Перевод слова: Bull";
+			break;
+		case 15:
+			cout << "Перевод слова: Great";
+			break;
+			return 0;
+		}
+		break;
+	case 2:
+		cout << "1. Russia\n";
+		cout << "2. Fish\n";
+		cout << "3. Yes\n";
+		cout << "4. No\n";
+		cout << "5. Milk\n";
+		cout << "6. Dog\n";
+		cout << "7. Can\n";
+		cout << "8. Airport\n";
+		cout << "9. Visa\n";
+		cout << "10. Book\n";
+		cout << "11. Formula\n";
+		cout << "12. Car\n";
+		cout << "13. Red\n";
+		cout << "14. Bull\n";
+		cout << "15. Great\n";
+		cin >> x;
+		switch (x) {
+		case 1:
+			cout << "Перевод слова: Россия";
+			break;
+		case 2:
+			cout << "Перевод слова: Рыба";
+			break;
+		case 3:
+			cout << "Перевод слова: Да";
+			break;
+		case 4:
+			cout << "Перевод слова: Нет";
+			break;
+		case 5:
+			cout << "Перевод слова: Молоко";
+			break;
+		case 6:
+			cout << "Перевод слова: Собака";
+			break;
+		case 7:
+			cout << "Перевод слова: Уметь";
+			break;
+		case 8:
+			cout << "Перевод слова: Аэропорт";
+			break;
+		case 9:
+			cout << "Перевод слова: Виза";
+			break;
+		case 10:
+			cout << "Перевод слова: Книга";
+			break;
+		case 11:
+			cout << "Перевод слова: Формула";
+			break;
+		case 12:
+			cout << "Перевод слова: Машина";
+			break;
+		case 13:
+			cout << "Перевод слова: Красный";
+			break;
+		case 14:
+			cout << "Перевод слова: Бык";
+			break;
+		case 15:
+			cout << "Перевод слова: Отлично";
+			break;
+			return 0;
+		}
+		break;
+	case 3:
+		cout << "Нажмите любую клавишу для завершения";
+		cin >> c;
+	}
+	return 0;
+}
