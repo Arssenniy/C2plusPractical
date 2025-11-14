@@ -1,0 +1,130 @@
+#include <iostream>
+
+using namespace std;
+	int main() {
+		setlocale(0, "");
+
+		int num;
+		int counter = 1;
+		int anser;
+
+		cout << "Введите число:";
+		cin >> num;
+
+		cout << "Пример:" << num << "*" << counter << " = ";
+		cin >> anser;
+
+		if (anser == num * counter) {
+		    cout << "Ты молодец\n";
+
+			counter++;
+		}
+		else if(anser != num * counter){
+			cout << "Ты тупой\n";
+		}
+
+		cout << "Пример:" << num << "*" << counter << " = ";
+		cin >> anser;
+
+		if (anser == num * counter) {
+			cout << "Ты молодец\n";
+
+			counter++;
+		}
+		else if (anser != num * counter) {
+			cout << "Ты тупой\n";
+		}
+
+
+		cout << "Пример:" << num << "*" << counter << " = ";
+		cin >> anser;
+
+		if (anser == num * counter) {
+			cout << "Ты молодец\n";
+
+			counter++;
+		}
+		else if (anser != num * counter) {
+			cout << "Ты тупой\n";
+		}
+
+
+		cout << "Пример:" << num << "*" << counter << " = ";
+		cin >> anser;
+
+		if (anser == num * counter) {
+			cout << "Ты молодец\n";
+
+			counter++;
+		}
+		else if (anser != num * counter) {
+			cout << "Ты тупой\n";
+		}
+
+
+		cout << "Пример:" << num << "*" << counter << " = ";
+		cin >> anser;
+
+		if (anser == num * counter) {
+			cout << "Ты молодец\n";
+
+			counter++;
+		}
+		else if (anser != num * counter) {
+			cout << "Ты тупой\n";
+		}
+
+
+		cout << "Пример:" << num << "*" << counter << " = ";
+		cin >> anser;
+
+		if (anser == num * counter) {
+			cout << "Ты молодец\n";
+
+			counter++;
+		}
+		else if (anser != num * counter) {
+			cout << "Ты тупой\n";
+		}
+
+
+		cout << "Пример:" << num << "*" << counter << " = ";
+		cin >> anser;
+
+		if (anser == num * counter) {
+			cout << "Ты молодец\n";
+
+			counter++;
+		}
+		else if (anser != num * counter) {
+			cout << "Ты тупой\n";
+		}
+
+
+		cout << "Пример:" << num << "*" << counter << " = ";
+		cin >> anser;
+
+		if (anser == num * counter) {
+			cout << "Ты молодец\n";
+
+			counter++;
+		}
+		else if (anser != num * counter) {
+			cout << "Ты тупой\n";
+		}
+
+
+		cout << "Пример:" << num << "*" << counter << " = ";
+		cin >> anser;
+
+		if (anser == num * counter) {
+			cout << "Ты молодец\n";
+
+			counter++;
+		}
+		else if (anser != num * counter) {
+			cout << "Ты тупой\n";
+		}
+
+		return 0;
+	}
