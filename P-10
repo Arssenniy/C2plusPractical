@@ -1,0 +1,61 @@
+#include <iostream>
+#include <ctime>
+
+using namespace std;
+
+int main() {
+	srand(time(NULL));
+	setlocale(0, "");
+
+	int num1 = rand() & 11;
+	int num2 = rand() & 11;
+	int num3 = rand() & 11;
+	int a;
+	int b;
+	int c;
+	int i = 5;
+	int p = 0;
+
+	cout << "Игра <Угадайка>\n";
+	cout << "Угадайте три из десяти рандомных чисел. У вас есть 5 попыток\n";
+	cout << "\n";
+	cout << "[1]Начать игру\n";
+	cout << "[2]Выход\n";
+	cout << "Выберите: ";
+	cin >> a;
+
+	if (a == 1) {
+		while (i > 0) {
+			cout << "Угаданных чисел" << "[" << p << "/3]\n";
+			cout << "Осталось попыток" << "[" << i << "/5]\n";
+			cout << "Ваше число: ";
+			cin >> b;
+
+			if (b == num1 or b == num2 or b == num3) {
+				p++;
+				i--;
+			}
+			else { 
+				i--; 
+			}
+			if (i == 0) {
+				cout << "У вас закончились попытки, вы проиграли :(";
+			}
+			if (p == 3) {
+				cout << "Вы отгадали все числа, победа!!!";
+			}
+			if (b >= 11) {
+				cout << "Загаданные числа от 1 до 10\n";
+			}
+		}
+	}
+
+	if (a > 2) {
+		cout << "Такого пункта не в меню";
+	}
+
+	if (a == 2) {
+		cout << "Игра прекращена";
+	}
+	return 0;
+}
