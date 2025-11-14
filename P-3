@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+
+	while (true) {
+		int a;
+		cout << "Введите число от 0 до 100..." << endl;
+		cin >> a;
+
+		if (a >= 0 and a <= 10) {
+			cout << "число в диапозоне от 0 до 10" << endl;
+			break;
+		}
+		else if (a >= 11 and a <= 21) {
+			cout << "число в диапозоне от 11 до 21" << endl;
+			break;
+		}
+		else if (a >= 21 and a <= 31) {
+			cout << "число в диапозоне от 21 до 31" << endl;
+			break;
+		}
+		else if (a >= 31 and a <= 41) {
+			cout << "число в диапозоне от 31 до 41" << endl;
+			break;
+		}
+		else if (a >= 41 and a <= 51) {
+			cout << "число в диапозоне от 41 до 51" << endl;
+			break;
+		}
+		else if (a >= 51 and a <= 61) {
+			cout << "число в диапозоне от 51 до 61" << endl;
+			break;
+		}
+		else if (a >= 61 and a <= 71) {
+			cout << "число в диапозоне от 61 до 71" << endl;
+			break;
+		}
+		else if (a >= 71 and a <= 81) {
+			cout << "число в диапозоне от 71 до 81" << endl;
+			break;
+		}
+		else if (a >= 81 and a <= 91) {
+			cout << "число в диапозоне от 81 до 91" << endl;
+			break;
+		}
+		else if (a >= 91 and a <= 100) {
+			cout << "число в диапозоне от 91 до 100";
+		}
+		else {
+			cout << "ошибка. Число меньше 0" << endl;
+		}
+	}
+
+	return 0;
+}
