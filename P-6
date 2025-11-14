@@ -1,0 +1,69 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+
+	cout << "Месяца года:\n";
+	cout << "(1)Январь\n";
+	cout << "(2)Февраль\n";
+	cout << "(3)Март\n";
+	cout << "(4)Апрель\n";
+	cout << "(5)Май\n";
+	cout << "(6)Июнь\n";
+	cout << "(7)Июль\n";
+	cout << "(8)Август\n";
+	cout << "(9)Сентябрь\n";
+	cout << "(10)Октябрь\n";
+	cout << "(11)Ноябрь\n";
+	cout << "(12)Декабрь\n";
+	
+	int a;
+	cout << "Выберите месяц:";
+	cin >> a;
+
+	switch (a) {
+	case 1:
+		cout << "Январь, зима мой др";
+		break;
+	case 2:
+		cout << "Февраль, зима без моего др:(";
+		break;
+	case 3:
+		cout << "Март, весна";
+		break;
+	case 4:
+		cout << "Апрель, весна";
+		break;
+	case 5:
+		cout << "Май, весна";
+		break;
+	case 6:
+		cout << "Июнь,лето ура каникулы!!!";
+		break;
+	case 7:
+		cout << "Июль,лето";
+		break;
+	case 8:
+		cout << "Август,лето";
+		break;
+	case 9:
+		cout << "Сентябрь,осень:(";
+		break;
+	case 10:
+		cout << "Октябрь,осень,winter arc";
+		break;
+	case 11:
+		cout << "Ноябрь,недрочабль";
+		break;
+	case 12:
+		cout << "Декабрь,зима чилл";
+		break;
+	}
+
+	if (a >= 13) {
+		cout << "Нет такого месяца";
+	}
+
+	return 0;
+}
