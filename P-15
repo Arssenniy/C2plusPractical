@@ -24,7 +24,7 @@ int main() {
         cout << "[1] Линия\n";
         cout << "[2] Квадрат\n";
         cout << "[3] Прямоугольник\n";
-        cout << "[4] Треугольник\n"; 
+        cout << "[4] Треугольник\n";
         cout << "[0] Выход\n";
         cout << "Выберите фигуру: ";
         cin >> menu;
@@ -37,8 +37,8 @@ int main() {
         case 4:
             system("cls");
             cout << "Фигура 'Треугольник'\n\n";
-            cout << "[1] Пустой\n";
-            cout << "[2] Заполненый\n\n";
+            cout << "[1] Заполненый\n\n";
+            cout << "[2] Пустой\n";
             cout << "Выберите тип: ";
             cin >> menu4;
 
@@ -50,23 +50,54 @@ int main() {
                 cout << "Символ: ";
                 cin >> sim3;
 
-                if (raz <= 0) {
-                    cout << "Нельзя брать минусовые размеры\n";
+                if (razTr <= 0) {
+                    cout << "Нельзя брать такие размеры\n";
                     system("pause");
                     break;
                 }
 
                 system("cls");
-
+                for (int i = 1; i <= razTr; i++) {
+                    for (int j = razTr - i; j > 0; j--) {
+                        cout << " ";
+                    }
+                    for (int k = 1; k <= 2 * i - 1; k++) {
+                        cout << sim3;
+                    }
+                    cout << endl;
+                }
+                break;
             case 2:
+                system("cls");
+                cout << "Размер: ";
+                cin >> razTr;
+                cout << "Символ: ";
+                cin >> sim3;
+
+                if (razTr <= 0) {
+                    cout << "Нельзя брать минусовые размеры\n";
+                    system("pause");
+                    break;
+                }
+
+                for (int i = 1; i <= razTr; i++) {
+                    for (int j = razTr - i; j > 0; j--) {
+                        cout << " ";
+                    }
+                    for (int k = 1; k <= 2 * i - 1; k++) {
+                        if (i == razTr || k == 1 || k == 2 * i - 1) {
+                            cout << sim3;
+                        }
+                        else {
+                            cout << " ";
+                        }
+                    }
+                    cout << endl;
+                }
+                break;
             default:
                 cout << "Такого пункта нет в меню\n\n";
             }
-            }
-
-
-
-
             break;
         case 1:
             system("cls");
@@ -85,7 +116,7 @@ int main() {
                 cin >> sim;
 
                 if (dl <= 0) {
-                    cout << "Нельзя брать минусовые размеры\n";
+                    cout << "Нельзя брать такие размеры\n";
                     system("pause");
                     break;
                 }
@@ -104,7 +135,7 @@ int main() {
                 cin >> sim;
 
                 if (dl <= 0) {
-                    cout << "Нельзя брать минусовые размеры\n";
+                    cout << "Нельзя брать такие размеры\n";
                     system("pause");
                     break;
                 }
@@ -136,7 +167,7 @@ int main() {
                 cin >> sim1;
 
                 if (raz <= 0) {
-                    cout << "Нельзя брать минусовые размеры\n";
+                    cout << "Нельзя брать такие размеры\n";
                     system("pause");
                     break;
                 }
@@ -158,7 +189,7 @@ int main() {
                 cin >> sim1;
 
                 if (raz <= 0) {
-                    cout << "Нельзя брать минусовые размеры\n";
+                    cout << "Нельзя брать такие размеры\n";
                     system("pause");
                     break;
                 }
@@ -201,7 +232,7 @@ int main() {
                 cin >> sim2;
 
                 if (shir <= 0 or vis <= 0) {
-                    cout << "Нельзя брать минусовые размеры\n";
+                    cout << "Нельзя брать такие размеры\n";
                     system("pause");
                     break;
                 }
@@ -224,7 +255,7 @@ int main() {
                 cin >> sim2;
 
                 if (shir <= 0 or vis <= 0) {
-                    cout << "Нельзя брать минусовые размеры\n";
+                    cout << "Нельзя брать такие размеры\n";
                     system("pause");
                     break;
                 }
@@ -260,5 +291,5 @@ int main() {
         cin.get();
         system("cls");
     }
-    return 0;
+   return 0;
 }
