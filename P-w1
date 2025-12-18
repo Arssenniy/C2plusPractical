@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+setlocale(0, "");
+
+int number;
+int numberof = 1;
+int summ = 0;
+
+cout << "Программа 'Сумма чисел'\n";
+cout << "* Вводите числа которые хотите суммировать, если хотите чтобы программа остановилась и выдала сумму напишите 0\n";
+cout << "Введите число: ";
+cin >> number;
+	
+while (number != 0) {
+	summ = summ + number;
+
+	cout << "Введите число: ";
+	cin >> number;
+	numberof++;
+}
+cout << "Количиство чисел: " << numberof << endl;
+cout << "Сумма: " << summ;
+
+ return 0;
+}
